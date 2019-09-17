@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.catalina.connector.InputBuffer</OriginalElement>
+  <nodes>
+    <node x="467.8864472580989" y="555.0">org.apache.catalina.connector.Request</node>
+    <node x="1147.6879566118405" y="373.0">javax.servlet.ServletRequest</node>
+    <node x="154.4494038699395" y="454.0">org.apache.catalina.connector.CoyoteInputStream</node>
+    <node x="239.25" y="232.0">java.io.Reader</node>
+    <node x="50.25" y="232.0">org.apache.tomcat.util.buf.ByteChunk.ByteInputChannel</node>
+    <node x="0.0" y="0.0">java.lang.AutoCloseable</node>
+    <node x="601.6165280404119" y="0.0">org.apache.tomcat.util.net.ApplicationBufferHandler</node>
+    <node x="802.6879566118405" y="373.0">org.apache.coyote.http11.filters.BufferedInputFilter</node>
+    <node x="288.2597142440891" y="373.0">org.apache.catalina.connector.InputBuffer</node>
+    <node x="730.5379039115646" y="111.0">org.apache.coyote.InputBuffer</node>
+    <node x="441.6879566118405" y="373.0">org.apache.coyote.http11.Http11InputBuffer</node>
+    <node x="13.5" y="111.0">java.io.Closeable</node>
+    <node x="978.6879566118405" y="373.0">org.apache.coyote.http11.filters.IdentityInputFilter</node>
+    <node x="255.25" y="111.0">java.lang.Readable</node>
+    <node x="1180.1879566118405" y="454.0">org.apache.catalina.servlet4preview.http.HttpServletRequest</node>
+    <node x="562.1879566118405" y="232.0">org.apache.coyote.Request</node>
+    <node x="625.6879566118405" y="373.0">org.apache.coyote.http11.filters.ChunkedInputFilter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.coyote.http11.filters.ChunkedInputFilter" target="org.apache.tomcat.util.net.ApplicationBufferHandler">
+      <point x="-22.428571428571445" y="-15.5" />
+      <point x="681.7593851832692" y="353.0" />
+      <point x="683.7678571428571" y="353.0" />
+      <point x="683.7678571428571" y="91.0" />
+      <point x="680.9801644040483" y="91.0" />
+      <point x="-17.636363636363626" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.http11.filters.ChunkedInputFilter" target="org.apache.coyote.InputBuffer">
+      <point x="22.428571428571445" y="-15.5" />
+      <point x="726.616528040412" y="343.0" />
+      <point x="755.2005494505495" y="343.0" />
+      <point x="755.2005494505495" y="202.0" />
+      <point x="769.6532885269493" y="202.0" />
+      <point x="-17.38461538461536" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.connector.InputBuffer" target="org.apache.tomcat.util.buf.ByteChunk.ByteInputChannel">
+      <point x="-45.19999999999999" y="-15.5" />
+      <point x="299.5597142440891" y="353.0" />
+      <point x="124.75" y="353.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.http11.filters.IdentityInputFilter" target="org.apache.coyote.Request">
+      <point x="-62.08333333333326" y="-15.5" />
+      <point x="991.1046232785072" y="323.0" />
+      <point x="652.4379566118405" y="323.0" />
+      <point x="42.75" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.Request" target="org.apache.coyote.InputBuffer">
+      <point x="31.66666666666663" y="-15.5" />
+      <point x="641.3546232785071" y="192.0" />
+      <point x="760.9609808346415" y="192.0" />
+      <point x="-26.076923076923094" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.Request" target="org.apache.tomcat.util.net.ApplicationBufferHandler">
+      <point x="-31.66666666666663" y="-15.5" />
+      <point x="578.0212899451739" y="91.0" />
+      <point x="663.3438007676847" y="91.0" />
+      <point x="-35.27272727272725" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.http11.filters.BufferedInputFilter" target="org.apache.coyote.InputBuffer">
+      <point x="-39.0" y="-15.5" />
+      <point x="841.6879566118405" y="353.0" />
+      <point x="854.2619038699395" y="353.0" />
+      <point x="854.2619038699395" y="212.0" />
+      <point x="795.7302116038724" y="212.0" />
+      <point x="8.692307692307736" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.connector.InputBuffer" target="org.apache.tomcat.util.net.ApplicationBufferHandler">
+      <point x="0.0" y="-15.5" />
+      <point x="344.7597142440891" y="313.0" />
+      <point x="368.75" y="313.0" />
+      <point x="368.75" y="61.0" />
+      <point x="610.4347098585938" y="61.0" />
+      <point x="-88.18181818181813" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.connector.Request" target="javax.servlet.ServletRequest">
+      <point x="29.6875" y="-15.5" />
+      <point x="545.0739472580989" y="525.0" />
+      <point x="1169.6879566118405" y="525.0" />
+      <point x="1169.6879566118405" y="434.0" />
+      <point x="1181.1879566118405" y="434.0" />
+      <point x="-33.5" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.connector.InputBuffer" target="java.io.Reader">
+      <point x="-22.600000000000023" y="-15.5" />
+      <point x="322.15971424408906" y="353.0" />
+      <point x="306.75" y="353.0" />
+      <point x="22.5" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.http11.filters.IdentityInputFilter" target="org.apache.coyote.InputBuffer">
+      <point x="-37.25" y="-15.5" />
+      <point x="1015.9379566118405" y="353.0" />
+      <point x="1027.3452372032727" y="353.0" />
+      <point x="1027.3452372032727" y="182.0" />
+      <point x="821.8071346807953" y="182.0" />
+      <point x="34.76923076923072" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.http11.filters.IdentityInputFilter" target="org.apache.tomcat.util.net.ApplicationBufferHandler">
+      <point x="62.08333333333337" y="-15.5" />
+      <point x="1115.271289945174" y="343.0" />
+      <point x="1087.6046232785072" y="343.0" />
+      <point x="1087.6046232785072" y="51.0" />
+      <point x="786.7983462222301" y="51.0" />
+      <point x="88.18181818181813" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.connector.InputBuffer" target="org.apache.coyote.Request">
+      <point x="45.19999999999999" y="-15.5" />
+      <point x="389.95971424408907" y="333.0" />
+      <point x="576.4379566118405" y="333.0" />
+      <point x="-33.25" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.connector.CoyoteInputStream" target="java.io.Closeable">
+      <point x="-53.33333333333337" y="-15.5" />
+      <point x="181.11607053660612" y="434.0" />
+      <point x="39.75" y="434.0" />
+      <point x="-26.25" y="15.5" />
+    </edge>
+    <edge source="java.io.Reader" target="java.io.Reader">
+      <point x="-22.5" y="15.5" />
+      <point x="261.75" y="283.0" />
+      <point x="219.25" y="283.0" />
+      <point x="219.25" y="247.5" />
+      <point x="-45.0" y="-0.0" />
+    </edge>
+    <edge source="org.apache.coyote.http11.Http11InputBuffer" target="org.apache.coyote.Request">
+      <point x="63.33333333333337" y="-15.5" />
+      <point x="581.0212899451739" y="353.0" />
+      <point x="595.4379566118405" y="353.0" />
+      <point x="-14.25" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.http11.filters.BufferedInputFilter" target="org.apache.coyote.Request">
+      <point x="-65.0" y="-15.5" />
+      <point x="815.6879566118405" y="333.0" />
+      <point x="642.9379566118405" y="333.0" />
+      <point x="33.25" y="15.5" />
+    </edge>
+    <edge source="java.io.Reader" target="java.io.Closeable">
+      <point x="-22.5" y="-15.5" />
+      <point x="261.75" y="212.0" />
+      <point x="92.25" y="212.0" />
+      <point x="26.25" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.connector.Request" target="org.apache.catalina.connector.InputBuffer">
+      <point x="-17.8125" y="-15.5" />
+      <point x="497.5739472580989" y="515.0" />
+      <point x="367.5097142440891" y="515.0" />
+      <point x="367.5097142440891" y="434.0" />
+      <point x="358.8847142440891" y="434.0" />
+      <point x="14.125" y="15.5" />
+    </edge>
+    <edge source="java.io.Reader" target="java.lang.Readable">
+      <point x="22.5" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.connector.CoyoteInputStream" target="org.apache.catalina.connector.InputBuffer">
+      <point x="0.0" y="-15.5" />
+      <point x="234.4494038699395" y="424.0" />
+      <point x="302.3847142440891" y="424.0" />
+      <point x="-42.375" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.http11.filters.BufferedInputFilter" target="org.apache.tomcat.util.net.ApplicationBufferHandler">
+      <point x="65.0" y="-15.5" />
+      <point x="945.6879566118405" y="353.0" />
+      <point x="926.75" y="353.0" />
+      <point x="926.75" y="71.0" />
+      <point x="751.5256189495028" y="71.0" />
+      <point x="52.90909090909088" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.http11.Http11InputBuffer" target="org.apache.coyote.InputBuffer">
+      <point x="-12.666666666666629" y="-15.5" />
+      <point x="505.02128994517386" y="313.0" />
+      <point x="498.9263809107557" y="313.0" />
+      <point x="498.9263809107557" y="162.0" />
+      <point x="734.8840577577184" y="162.0" />
+      <point x="-52.15384615384619" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.connector.Request" target="org.apache.coyote.Request">
+      <point x="17.8125" y="-15.5" />
+      <point x="533.1989472580989" y="515.0" />
+      <point x="615.1879566118405" y="515.0" />
+      <point x="4.75" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.http11.Http11InputBuffer" target="org.apache.tomcat.util.net.ApplicationBufferHandler">
+      <point x="-63.333333333333314" y="-15.5" />
+      <point x="454.35462327850723" y="313.0" />
+      <point x="473.4285705366061" y="313.0" />
+      <point x="473.4285705366061" y="71.0" />
+      <point x="628.0710734949574" y="71.0" />
+      <point x="-70.5454545454545" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.servlet4preview.http.HttpServletRequest" target="javax.servlet.ServletRequest">
+      <point x="0.0" y="-15.5" />
+      <point x="1259.6879566118405" y="434.0" />
+      <point x="1248.1879566118405" y="434.0" />
+      <point x="33.5" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.http11.filters.ChunkedInputFilter" target="org.apache.coyote.Request">
+      <point x="-67.28571428571433" y="-15.5" />
+      <point x="636.9022423261263" y="353.0" />
+      <point x="623.9379566118405" y="353.0" />
+      <point x="14.25" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.connector.Request" target="org.apache.catalina.servlet4preview.http.HttpServletRequest">
+      <point x="41.5625" y="-15.5" />
+      <point x="556.9489472580989" y="535.0" />
+      <point x="1259.6879566118405" y="535.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.catalina.connector.Request" target="org.apache.catalina.connector.CoyoteInputStream">
+      <point x="-29.6875" y="-15.5" />
+      <point x="485.6989472580989" y="525.0" />
+      <point x="274.4494038699395" y="525.0" />
+      <point x="40.0" y="15.5" />
+    </edge>
+    <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.apache.coyote.InputBuffer" target="org.apache.tomcat.util.net.ApplicationBufferHandler">
+      <point x="0.0" y="-15.5" />
+      <point x="787.0379039115646" y="91.0" />
+      <point x="716.2528916767756" y="91.0" />
+      <point x="17.636363636363626" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="471.5" y="293.0" />
+  <SelectedNodes>
+    <node>org.apache.catalina.connector.InputBuffer</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
